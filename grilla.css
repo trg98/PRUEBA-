@@ -1,5 +1,5 @@
-/*grid_container_pedidos = 2 columnas para index y resto de internas.*/
-/*grid_container_productos = 3 columnas para productos*/
+*grid_container_pedidos = 2 columnas */
+ 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
@@ -20,22 +20,7 @@ body{
 	 
 }
 
-
-.grid_container{
-  display: grid; 
-  grid-template-columns: 33% 33% 33% ; 
-  grid-template-rows: 150px 50px auto 60px; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "header header header " 
-    "navbar navbar navbar " 
-    "maina mainb mainc " 
-    "footer footer footer "  ; 
-
-
-
-}
-
+ 
 
 .grid_container_pedidos{
   display: grid; 
@@ -374,21 +359,7 @@ margin: 5%;
 /*escritorio*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
-.grid_container{
-  display: grid; 
-  grid-template-columns: 33% 33% 33% ; 
-  grid-template-rows: 150px 50px auto 60px; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "header header header " 
-    "navbar navbar navbar " 
-    "maina mainb mainc " 
-    "footer footer footer "  ; 
-
-
-
-}
-
+ 
 .grid_container_pedidos{
   display: grid; 
   grid-template-columns: 25% 25% 25% 25%; 
@@ -589,19 +560,7 @@ width: 90%;
 /*tablet*/
 @media (min-width: 768px) and (max-width: 991px)  {
 
-	.grid_container{
-
-		grid-template: 
-		"header 	header" 	100px 
-		"navbar 	navbar" 	40px
-		"maina 	mainb " 		auto
-		"mainc mainc" auto
-		"footer 	footer" 	50px /
-		 50% 		50%;
-
- 	}
-
-
+ 
 
 
 .grid_container_pedidos{
@@ -673,19 +632,7 @@ grid-template:
 
 {
 
-	.grid_container{
 
-		grid-template: 
-		"header " 	100px 
-		"navbar " 	80px
-		"maina  " 		auto
-			"mainb  " 		auto
-		"mainc " auto
-		
-		"footer 	" 	50px /
-			auto;
-
- 	}
 
 .grid_container_pedidos{
 	grid-template:
@@ -693,6 +640,7 @@ grid-template:
 		"navbar " 	80px
 		"maina  " 		auto
 			"mainb  " 		auto
+
 "footer 	" 	50px /
 			auto;			
 	;
@@ -737,7 +685,7 @@ padding-top: -5%; margin-top: -3%;}
 #menu li {
 	text-decoration: none;
 	color: white;
-    
+  
 
    
 }
